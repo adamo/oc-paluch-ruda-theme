@@ -1,0 +1,33 @@
+items:
+    - title: "Pakiety terapii"
+      type: header
+      code: ""
+      viewBag:
+          isHidden: "0"
+          cssClass: ""
+          isExternal: "0"
+    - title: "Klasyczna terapia Dr Paluch"
+      type: cms-page
+      code: ""
+      reference: klasyczna
+      viewBag:
+          isHidden: "0"
+          cssClass: ""
+          isExternal: "0"
+    - title: "Aktywni Sport & Fit"
+      type: cms-page
+      code: ""
+      reference: sport-fit
+      viewBag:
+          isHidden: "0"
+          cssClass: ""
+          isExternal: "0"
+    - title: "Kompleksowa terapia bólu kręgosłupa"
+      type: cms-page
+      code: ""
+      reference: kompleksowa
+      viewBag:
+          isHidden: "0"
+          cssClass: ""
+          isExternal: "0"
+name: "mapa strony"

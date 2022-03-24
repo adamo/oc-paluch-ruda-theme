@@ -1,0 +1,67 @@
+url = "/leczenie"
+layout = "default"
+title = "Na czym polega leczenie"
+is_hidden = 0
+
+[ToolList]
+==
+{% put hero %}
+<div class="hero">
+    <div class="container">
+            {% content 'terapiapaluch/TP-Na-czym-polega.htm' %}
+
+    </div>
+    <div class="image">
+      <img src="{{ '/assets/images/terapie.jpg'|theme }}" alt="">
+    </div>
+  </div>
+{% endput%}
+<div class="container grid-half black-circle box">
+    <div class="icon-box">
+        <figure><svg viewBox='0 0 417 417'><use xlink:href='#spine'></use></svg></figure>
+        <article>
+              {% content 'terapiapaluch/TP-Terapia-klasyczna.htm' %}
+            <a href="{{ 'klasyczna'|page }}" class="readmore" >dowiedz się więcej <svg viewBox="0 0 62 48"><use xlink:href="#arrow-right"></use></svg></a>
+        </article>
+    </div>
+    <div class="icon-box">
+        <figure><svg viewBox='0 0 417 417'><use xlink:href='#therapy'></use></svg></figure>
+        <article>
+            {% content 'terapiapaluch/TP-Terapia-kompleksowa.htm' %}
+            <a href="{{ 'kompleksowa'|page }}" class="readmore">dowiedz się więcej</a>
+        </article>
+    </div>
+</div>
+<div class="container section">
+   {% content 'terapiapaluch/3Poziomy.htm' %}
+    <ol class="large-numbers vertical">
+        <li>
+            {% content 'terapiapaluch/Globalny.htm' %}
+        </li>
+        <li>
+            {% content 'terapiapaluch/UszkodzoneTkanki.htm' %}
+        </li>
+        <li>
+            {% content 'terapiapaluch/Komorkowy.htm' %}
+        </li>
+    </ol>
+</div>
+<div class="section flex-container">
+    <article>
+        <section>
+            {% content 'terapiapaluch/Narzedzia.htm' %}
+        </section>
+    </article>
+    <aside class="image rounded-image">
+        <svg class='circle-decorator circle-before' viewBox='0 0 504 674'><use xlink:href='#rounded-circle'></use></svg>
+        <img src="{{ '/assets/images/right-image.png'|theme }}" alt="Terapia Paluch">
+        <svg class='circle-decorator circle-after' viewBox='0 0 504 674'><use xlink:href='#rounded-circle'></use></svg>
+    </aside>
+</div>
+<div class="section container">
+    <div class="accordion">
+        {% component 'ToolList' %}
+    </div>
+</div>
+{% partial 'documents' %}
+{% partial 'select-package' %}

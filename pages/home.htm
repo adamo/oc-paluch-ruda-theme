@@ -1,0 +1,21 @@
+url = "/"
+layout = "default"
+title = "Gabinet Paluch Ruda Śląska"
+is_hidden = 0
+==
+{% partial 'home/main' %}
+<div class="section flex-container">
+    <article>
+        <section>
+            {% content 'glowna/dla-kogo' %}
+            <a href="#" class="button toggle-button" data-toggle='schedule-popup'>rejestracja</a>
+        </section>
+    </article>
+    <aside class="image rounded-image">
+        <svg class='circle-decorator circle-before' viewBox='0 0 504 674'><use xlink:href='#rounded-circle'></use></svg>
+        <img src="{{ '/assets/images/right-image.png'|theme }}" alt="Terapia Paluch">
+        <svg class='circle-decorator circle-after' viewBox='0 0 504 674'><use xlink:href='#rounded-circle'></use></svg>
+    </aside>
+</div>
+{% partial 'documents' %}
+{% partial 'select-package' %}

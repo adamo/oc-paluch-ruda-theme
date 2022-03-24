@@ -1,0 +1,47 @@
+url = "/kontakt"
+layout = "default"
+title = "Kontakt"
+is_hidden = 0
+
+[emptyForm]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
+
+[map]
+map = 1
+showOnlyObject = 0
+fieldId = "map"
+height = "100%"
+latitude = 50.253910
+longitude = 18.900520
+zoom = 10
+scrollWheelZoom = 1
+==
+{% put hero %}
+<div class="hero">
+    <div class="container">
+      <h1 class="large">Informacje <strong>kontaktowe</strong></h1>
+    </div>
+    <div class="map image">
+      {% component 'map' %}
+    </div>
+</div>
+{% endput%}
+<div class="section container grid-half">
+    <section>
+        <h3><strong>dane</strong> Kontaktowe</h3>
+        {% content 'rejestracja' %}
+    </section>
+    <section>
+        <h3><strong>Formularz</strong> kontaktowy</h3>
+       {% component 'emptyForm' %}
+    </section>
+
+</div>

@@ -1,0 +1,7 @@
+{% if this.page.apiBag.staticPage %}
+	{% if hero_title %}
+	  	<h2 class="page-title animate-fade">{{hero_title}}<span class="accent">.</span></h2>
+	{% else %}
+	  	<h2 class="page-title animate-fade">{{this.page.title}}<span class="accent">.</span></h2>
+	{% endif %}
+{% endif %}

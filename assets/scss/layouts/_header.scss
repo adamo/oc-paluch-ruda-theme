@@ -1,0 +1,23 @@
+.site-header {
+    width: 100%;
+    transition: all 0.7s ease-out;
+    z-index: 999;
+    --icon-fill: #fff;
+
+    .head {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: $size__mobile + 1px) {
+    @import "header/mobile";
+}
+
+@media screen and (min-width: $size__mobile) {
+    @import "header/desktop";
+}

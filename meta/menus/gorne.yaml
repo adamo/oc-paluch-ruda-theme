@@ -1,0 +1,34 @@
+items:
+    - title: "terapia paluch"
+      type: url
+      url: /leczenie
+      code: ""
+      viewBag:
+          isHidden: "0"
+          cssClass: ""
+          isExternal: "0"
+    - title: pakiety
+      type: url
+      url: /pakiety
+      code: ""
+      viewBag:
+          isHidden: "0"
+          cssClass: ""
+          isExternal: "0"
+    - title: kontakt
+      type: url
+      url: /kontakt
+      code: ""
+      viewBag:
+          isHidden: "0"
+          cssClass: ""
+          isExternal: "0"
+    - title: Materace
+      type: url
+      url: https://materace-paluch.pl
+      code: ""
+      viewBag:
+          isHidden: "0"
+          cssClass: ""
+          isExternal: "1"
+name: górne

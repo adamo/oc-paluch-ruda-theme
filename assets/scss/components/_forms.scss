@@ -1,0 +1,69 @@
+@import "forms/fields";
+@import "forms/buttons";
+
+.contact-form {
+    padding: calc(var(--spacing) / 2);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+    margin-left: var(--spacing);
+    margin-right: var(--spacing);
+    position: relative;
+    z-index: 2;
+}
+
+.inline-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 54em;
+}
+
+form {
+    .group {
+        margin-bottom: var(--size-padding);
+    }
+}
+
+.alert {
+    @extend %box-base;
+    padding: 1rem;
+    margin-bottom: var(--spacing) / 2;
+
+    &.alert-success {
+        background-color: var(--color-brand-primary);
+        color: var(--white);
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.privacy-policy {
+    display: flex;
+
+    p {
+        margin: 0;
+        margin-left: 1rem;
+        font-size: 0.8rem;
+        margin-top: -5px;
+    }
+}
+
+.wpcf7-not-valid-tip {
+    font-weight: normal;
+    text-transform: none;
+    display: block;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+
+.fieldset.checkbox {
+    label,
+    p {
+        font-weight: normal;
+    }
+    p {
+        font-size: 0.8em;
+    }
+}

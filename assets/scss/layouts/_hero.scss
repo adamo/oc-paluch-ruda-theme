@@ -1,0 +1,62 @@
+.hero {
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+
+    .container,
+    .image {
+        grid-row: 1;
+        grid-column: 1;
+        position: relative;
+    }
+
+    .container {
+        z-index: 2;
+        width: 100%;
+        padding-top: var(--spacing);
+        padding-bottom: var(--spacing);
+    }
+
+    .image {
+        align-self: flex-end;
+        overflow: hidden;
+
+        svg {
+            transform: translateX(-29vw) translateY(13px);
+            display: block;
+            min-width: 800px;
+            transform-origin: right top;
+        }
+
+        img {
+            float: right;
+            max-height: 700px;
+        }
+    }
+
+    h1 {
+        font-size: var(--font-size-hg);
+        line-height: 0.8;
+        margin: 0;
+
+        strong {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: $size-mobile) {
+        .image svg {
+            transform: translateX(37vw) translateY(14px);
+        }
+    }
+}
+
+.actions {
+    .button {
+        margin-right: 1rem;
+    }
+
+    .button:first-child {
+        margin-bottom: calc(var(--size-padding) / 2);
+    }
+}

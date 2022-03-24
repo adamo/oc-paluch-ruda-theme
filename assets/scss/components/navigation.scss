@@ -1,0 +1,51 @@
+.nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.main-navigation {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    a {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 0 0.5em;
+
+        &:hover {
+            color: var(--brand-yellow);
+        }
+    }
+
+    .active a {
+        color: var(--brand-yellow);
+    }
+}
+
+.site-footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a,
+    span {
+        // text-transform: uppercase;
+        font-size: 0.9em;
+    }
+    span {
+        text-transform: uppercase;
+        font-size: 0.8em;
+        list-style-type: 0.1em;
+        font-weight: bold;
+    }
+}

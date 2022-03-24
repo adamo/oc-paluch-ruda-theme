@@ -1,0 +1,61 @@
+/*  Structure */
+$size__site-width: 1200px;
+$size__tablet: 796px;
+$size__large-tablet: 960px;
+$size__small-tablet: 680px;
+$size__header-width: 1700px;
+$size__mobile: 860px;
+$size-mobile: $size__mobile;
+$size__tablet: 23em;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+@font-face {
+    font-family: "Bison";
+    src: url("../fonts/Bison-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --brand-hsl: 0 0% 0%;
+    --brand-primary: hsl(0 0% 0% /1);
+    --brand-secondary: #fff;
+    --brand-yellow-hsl: 55 100% 53%;
+    --brand-sepia: #f3eeeb;
+    --brand-sepia-dark: #86776c;
+    --brand-yellow: hsl(var(--brand-yellow-hsl) / 1);
+    --white: hsl(100 100% 100% / 1);
+    --color-text: var(--brand-primary);
+    --font-base-size: 16px;
+    --size-text-body: clamp(0.81rem, 0.75rem + 0.29vw, 1rem);
+    --size-container: 80em;
+    --font-main: Lato;
+    --font-headings: Bison;
+    --font-size-hg: clamp(3.13rem, 1.28rem + 9.22vw, 8rem);
+    --font-size-h1: clamp(3.13rem, 1.28rem + 9.22vw, 8rem);
+    --font-size-h2: clamp(2.5rem, 1.25rem + 6.27vw, 4.3rem);
+    --font-size-h3: clamp(1.88rem, 1.48rem + 1.96vw, 3.13rem);
+    --size-padding: max(0.1vmax, 2rem);
+    --spacing: 3rem;
+    --gap: 1.8rem;
+    --grid-gap: min(2vmax, 2rem);
+    --box-background: var(--brand-primary);
+    --icon-bg-fill: #000;
+    --icon-fill: #fff;
+    --icon-text-fill: #000;
+    --color-selection: #fff;
+    --background-selection: var(--brand-primary);
+    --box-shadow-default: 0 0 20px hsl(var(--brand-hsl) / 0.1);
+    --border-color: var(--brand-primary);
+    --rounded-circle-fill: #e7e4e2;
+    --box-text-color: #fff;
+    --text-box-color: #fff;
+    --flex-min-width: 250px;
+    --numbers-hover: var(--brand-primary);
+    --header-background-color: 0 0% 0%;
+    --scrollbar-color: var(--brand-primary);
+    --color-hover: var(--brand-yellow);
+    --packet-hover: var(--brand-yellow);
+    --link-hover: var(--brand-yellow);
+}

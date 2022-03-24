@@ -1,0 +1,21 @@
+[staticMenu]
+code = "gorne"
+
+[viewBag]
+
+==
+<header class="site-header" id="masthead">
+	<div class="inner container">
+		<div class="brand-bar">
+			<h1 class='logo'><a href="{{ url('/') }}"><svg class=logo width="233" height="95" viewBox="0 0 721 296"><use  xlink:href='#logo'></use></svg></a></h1>
+			<button class='menu-toggle'><span class="screen__reader-text">menu</span><span class="lines"></span></button>
+			{% partial 'contact/phone_and_email' %}
+			<div class="icon-button"><a href="#" class=" toggle-button" data-toggle='schedule-popup'><svg viewBox='0 0 417 417'><use xlink:href='#schedule'></use></svg></a></div>
+		</div>
+		<div class="toggable">
+			<nav class="main-navigation">
+				{% component 'staticMenu' %}
+			</nav>
+		</div>
+	</div>
+</header>

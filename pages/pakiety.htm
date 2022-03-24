@@ -1,0 +1,26 @@
+title = "Pakiety terapii"
+url = "/pakiety"
+layout = "default"
+meta_title = ""
+meta_description = ""
+is_hidden = 0
+
+[packetsList]
+
+==
+{% put hero %}
+<div class="hero">
+    <div class="container">
+      <h1 class="large">TERAPIA  <strong>DLA CIEBIE</strong></h1>
+    </div>
+    <div class="image">
+      <img src="{{ '/assets/images/terapie.jpg'|theme }}" alt="">
+    </div>
+</div>
+{% endput%}
+{% partial 'home/main' %}
+<div class="section container grid-third">
+   {% component 'packetsList' %}
+</div>
+
+{% partial 'documents' %}

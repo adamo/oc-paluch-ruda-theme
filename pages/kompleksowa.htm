@@ -1,0 +1,34 @@
+title = "Kompleksowa terapia bólu kręgosłupa"
+url = "/kompleksowa"
+layout = "default"
+meta_title = ""
+meta_description = ""
+is_hidden = 0
+==
+{% put hero %}
+<div class="hero">
+    <div class="container">
+      <h1 class="large">Kompleksowa terapia<strong>Bólu kręgosłupa</strong></h1>
+      <p class="lead"></p>
+    </div>
+    <div class="image">
+      <img src="{{ '/assets/images/terapia-kompleksowa.jpg'|theme }}" alt="">
+    </div>
+</div>
+{% endput%}
+{% partial 'home/main' %}
+<div class="section flex-container">
+    <article>
+        <section>
+            <h2>TERAPIA W <strong>KONCEPCJI PALUCH</strong></h2>
+            <p class="lead">Klasyczna terapia leczenia manualnego zespołów bólowych kręgosłupa, wywodząca się z wielopokoleniowej tradycji rodziny Paluch. Terapia stosowana jest w Gabinetach Paluch w Polsce od ponad 80 lat. Terapia jest bezpiecznym sposobem leczenia bólu kręgosłupa.</p>
+        </section>
+    </article>
+    <aside class="image rounded-image">
+        <svg class='circle-decorator circle-before' viewBox='0 0 504 674'><use xlink:href='#rounded-circle'></use></svg>
+        <img src="{{ '/assets/images/right-image.png'|theme }}" alt="Terapia Paluch">
+        <svg class='circle-decorator circle-after' viewBox='0 0 504 674'><use xlink:href='#rounded-circle'></use></svg>
+    </aside>
+</div>
+{% partial 'documents' %}
+{% partial 'select-package' %}
