@@ -6,7 +6,7 @@ is_hidden = 0
 [ToolList]
 ==
 {% put hero %}
-<div class="hero">
+<div class="hero transition-fade">
     <div class="container">
             {% content 'terapiapaluch/TP-Na-czym-polega.htm' %}
 
@@ -20,7 +20,7 @@ is_hidden = 0
     <div class="icon-box">
         <figure><svg viewBox='0 0 417 417'><use xlink:href='#spine'></use></svg></figure>
         <article>
-              {% content 'terapiapaluch/TP-Terapia-klasyczna.htm' %}
+            {% content 'terapiapaluch/TP-Terapia-klasyczna.htm' %}
             <a href="{{ 'klasyczna'|page }}" class="readmore" >dowiedz się więcej <svg viewBox="0 0 62 48"><use xlink:href="#arrow-right"></use></svg></a>
         </article>
     </div>
@@ -28,7 +28,7 @@ is_hidden = 0
         <figure><svg viewBox='0 0 417 417'><use xlink:href='#therapy'></use></svg></figure>
         <article>
             {% content 'terapiapaluch/TP-Terapia-kompleksowa.htm' %}
-            <a href="{{ 'kompleksowa'|page }}" class="readmore">dowiedz się więcej</a>
+            <a href="{{ 'kompleksowa'|page }}" class="readmore">dowiedz się więcej<svg viewBox="0 0 62 48"><use xlink:href="#arrow-right"></use></svg></a>
         </article>
     </div>
 </div>

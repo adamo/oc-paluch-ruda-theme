@@ -1,181 +1,202 @@
 tabs:
-    fields:
-        site_title:
-            tab: GŁówne
-            label: Tytuł strony
-            type: text
-            default:
-            comment: Użyty jako główny tytuł strony
-        hero_image:
-            tab: GŁówne
-            label: Główny obrazek na stronie
-            type: mediafinder
-            mode: image
-        sign_up_text:
-            tab: GŁówne
-            label: treść przycisku zapisz się
-            type: text
-            default: zapisz się
-        logo:
-            tab: GŁówne
-            type: fileupload
-            label: Logo
-            mode: file
-        blog_image:
-            tab: Treści
-            type: mediafinder
-            mode: image
-            label: Zdjęcie główne dla bloga
-            span: right
-        brand_color:
-            tab: GŁówne
-            label: Kolor firmowy - główny
-            type: colorpicker
-            default: "#A71D4F"
-        google_site_verification:
-            tab: Kody
-            label: Kod weryfikujący Google
-            type: text
-        google_maps_api:
-            tab: Mapa
-            label: Kod Google Maps API
-            type: text
-            default: AIzaSyAutM8b4iEXGYrT4NaNWv-TyGbbFhDnp4Y
-        footer_text:
-            tab: Treści
-            label: Treść w stopce
-            type: richeditor
-            toolbarButtons: bold,paragraphStyle,inlineStyle,paragraphFormat
+  fields:
+    site_title:
+      tab: GŁówne
+      label: Tytuł strony
+      type: text
+      default:
+      comment: Użyty jako główny tytuł strony
+    hero_image:
+      tab: GŁówne
+      label: Główny obrazek na stronie
+      type: mediafinder
+      mode: image
+    sign_up_text:
+      tab: GŁówne
+      label: treść przycisku zapisz się
+      type: text
+      default: zapisz się
+    logo:
+      tab: GŁówne
+      type: fileupload
+      label: Logo
+      mode: file
+    blog_image:
+      tab: Treści
+      type: mediafinder
+      mode: image
+      label: Zdjęcie główne dla bloga
+      span: right
+    brand_color:
+      tab: GŁówne
+      label: Kolor firmowy - główny
+      type: colorpicker
+      default: "#A71D4F"
+    google_site_verification:
+      tab: Kody
+      label: Kod weryfikujący Google
+      type: text
+    google_maps_api:
+      tab: Mapa
+      label: Kod Google Maps API
+      type: text
+      default: AIzaSyAutM8b4iEXGYrT4NaNWv-TyGbbFhDnp4Y
+    footer_text:
+      tab: Treści
+      label: Treść w stopce
+      type: richeditor
+      toolbarButtons: bold,paragraphStyle,inlineStyle,paragraphFormat
+    address:
+      tab: Kontakt
+      label: Adres
+      type: textarea
+      default:
+    main_phone:
+      tab: Kontakt
+      label: Telefon główny
+      default: +48 666 666 666
+    main_email:
+      tab: Kontakt
+      label: Email główny
+      default: kontakt@paluch.katowice.pl
+    form_section:
+      type: section
+      tab: Kontakt
+      label: Formularz kontaktowy
+    form_email:
+      tab: Kontakt
+      label: Email główny
+      default: kontakt@paluch.katowice.pl
+    form_subject:
+      tab: Kontakt
+      label: Temat wiadomości
+      comment: temat wiadomości wysłany na adres
+      default: Wiadomość ze strony paluch.katowice.pl
+    form_success:
+      tab: Kontakt
+      label: Komunikat wysyłki
+      default: Pomyślnie wysłano wiadomość
+    form_error:
+      tab: Kontakt
+      label: Komunikat błędu
+      default: Pomyślnie wysłano wiadomość
+    socialSection:
+      label: Media społecznościowe
+      type: section
+      tab: Kontakt
+      comment: Adresy do stron społecznościowych
+    instagram:
+      tab: Kontakt
+      label: Instagram
+    twitter:
+      tab: Kontakt
+      label: twitter
+    youtube:
+      tab: Kontakt
+      label: Youtube
+    facebook:
+      tab: Kontakt
+      label: Facebook
+    linkedin:
+      tab: Kontakt
+      label: LinkedIn
+    latitude:
+      tab: Mapa
+      label: Długość geograficzna
+      default:
+    longtude:
+      tab: Mapa
+      label: Szerokość geograficzna
+      default:
+    markerInfo:
+      tab: Mapa
+      label: treść markera
+      type: richeditor
+    markerIcon:
+      label: ikona na Mapie
+      tab: Mapa
+      type: mediafinder
+      mode: image
+    headMeta:
+      label: Dodatkowe tagi meta
+      tab: Kody
+      type: textarea
+    sidebar_fields:
+      type: repeater
+      size: giant
+      tab: Pasek boczny
+      prompt: dodaj nowy element
+      groups:
         address:
-            tab: Kontakt
-            label: Adres
-            type: textarea
-            default:
-        main_phone:
-            tab: Kontakt
-            label: Telefon główny
-            default: +48 666 666 666
-        main_email:
-            tab: Kontakt
-            label: Email główny
-            default: kontakt@paluch.katowice.pl
-        socialSection:
-            label: Media społecznościowe
-            type: section
-            tab: Kontakt
-            comment: Adresy do stron społecznościowych
-        instagram:
-            tab: Kontakt
-            label: Instagram
-        twitter:
-            tab: Kontakt
-            label: twitter
-        youtube:
-            tab: Kontakt
-            label: Youtube
-        facebook:
-            tab: Kontakt
-            label: Facebook
-        linkedin:
-            tab: Kontakt
-            label: LinkedIn
-        latitude:
-            tab: Mapa
-            label: Długość geograficzna
-            default:
-        longtude:
-            tab: Mapa
-            label: Szerokość geograficzna
-            default:
-        markerInfo:
-            tab: Mapa
-            label: treść markera
-            type: richeditor
-        markerIcon:
-            label: ikona na Mapie
-            tab: Mapa
-            type: mediafinder
-            mode: image
-        headMeta:
-            label: Dodatkowe tagi meta
-            tab: Kody
-            type: textarea
-        sidebar_fields:
-            type: repeater
-            size: giant
-            tab: Pasek boczny
-            prompt: dodaj nowy element
-            groups:
-                address:
-                    name: Adres
-                    description: Adres z ustawień obok
-                    icon: icon-address-book
-                    fields:
-                        title:
-                            type: text
-                            label: Tytuł bloku
-                            span: left
-                contact:
-                    name: Informacje kontaktowe
-                    description: Telefon oraz email z zakładki kontakt
-                    icon: icon-address-book
-                    fields:
-                        title:
-                            type: text
-                            label: Tytuł bloku
-                            span: left
-                lastest_posts:
-                    name: Ostatnie wpisy
-                    description: ostatnie wpisy
-                    icon: icon-list-ul
-                    fields:
-                        title:
-                            type: text
-                            label: Tytuł bloku
-                            span: left
-                        limit:
-                            type: number
-                            label: Ilość
-                            span: right
-                            default: 5
-                popular_posts:
-                    name: Popularne wpisy
-                    description: Popularne wpisy
-                    icon: icon-list-ol
-                    fields:
-                        title:
-                            type: text
-                            label: Tytuł bloku
-                            span: left
-                        limit:
-                            type: number
-                            label: Ilość wpisów
-                            comment: Ile wpisów ma się pokazać na liście?
-                            span: right
-                            default: 5
-                social_icons:
-                    name: Ikony społecznościowe
-                    description: Pokazuje ikony społecznościowe ustalone w sekcji kontakt
-                    icon: icon-share-alt
-                    fields:
-                        title:
-                            type: text
-                            label: Tytuł bloku
-                            span: left
-                text:
-                    name: Treść
-                    description: Dowolna treść
-                    icon: icon-text
-                    fields:
-                        content:
-                            type: richeditor
-                            span: full
-                # categories:
-                #     name: Kategorie wpisów
-                #     description: Pokazuje listę kategorii wpisów na blogu
-                #     icon: icon-list-alt
-                #     fields:
-                #         title:
-                #             type: text
-                #             label: Tytuł bloku
-                #             span: left
+          name: Adres
+          description: Adres z ustawień obok
+          icon: icon-address-book
+          fields:
+            title:
+              type: text
+              label: Tytuł bloku
+              span: left
+        contact:
+          name: Informacje kontaktowe
+          description: Telefon oraz email z zakładki kontakt
+          icon: icon-address-book
+          fields:
+            title:
+              type: text
+              label: Tytuł bloku
+              span: left
+        lastest_posts:
+          name: Ostatnie wpisy
+          description: ostatnie wpisy
+          icon: icon-list-ul
+          fields:
+            title:
+              type: text
+              label: Tytuł bloku
+              span: left
+            limit:
+              type: number
+              label: Ilość
+              span: right
+              default: 5
+        popular_posts:
+          name: Popularne wpisy
+          description: Popularne wpisy
+          icon: icon-list-ol
+          fields:
+            title:
+              type: text
+              label: Tytuł bloku
+              span: left
+            limit:
+              type: number
+              label: Ilość wpisów
+              comment: Ile wpisów ma się pokazać na liście?
+              span: right
+              default: 5
+        social_icons:
+          name: Ikony społecznościowe
+          description: Pokazuje ikony społecznościowe ustalone w sekcji kontakt
+          icon: icon-share-alt
+          fields:
+            title:
+              type: text
+              label: Tytuł bloku
+              span: left
+        text:
+          name: Treść
+          description: Dowolna treść
+          icon: icon-text
+          fields:
+            content:
+              type: richeditor
+              span: full
+        # categories:
+        #     name: Kategorie wpisów
+        #     description: Pokazuje listę kategorii wpisów na blogu
+        #     icon: icon-list-alt
+        #     fields:
+        #         title:
+        #             type: text
+        #             label: Tytuł bloku
+        #             span: left
