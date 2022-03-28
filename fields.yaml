@@ -40,7 +40,7 @@ tabs:
       tab: Mapa
       label: Kod Google Maps API
       type: text
-      default: AIzaSyAutM8b4iEXGYrT4NaNWv-TyGbbFhDnp4Y
+      default:
     footer_text:
       tab: Treści
       label: Treść w stopce
