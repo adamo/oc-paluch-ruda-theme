@@ -5,6 +5,7 @@ console.log(
 import Headroom from "headroom.js";
 import Swup from "swup";
 import SwupScrollPlugin from "@swup/scroll-plugin";
+import SwupBodyClassPlugin from "@swup/body-class-plugin";
 
 import { initPopups, closePopupInit } from "./init-popups";
 import { initAccordeon } from "./init-accordeon";
@@ -39,7 +40,7 @@ function initAll() {
 function initSwup() {
   new Swup({
     containers: [".page-content", ".main-navigation", ".hero"],
-    plugins: [new SwupScrollPlugin()],
+    plugins: [new SwupScrollPlugin(), new SwupBodyClassPlugin()],
   });
 
   document.addEventListener("swup:transitionStart", function (event) {
