@@ -24,6 +24,17 @@
   );
 }
 
+.flex-third {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    flex-basis: 33%;
+    flex-grow: 1;
+    min-width: 200px;
+  }
+}
+
 .page-klasyczna {
   --box-background: var(--brand-sepia);
   --color-text: var(--brand-sepia-dark);
@@ -70,6 +81,7 @@
   --icon-text-fill: #000;
   // --icon-fill: var(--brand-primary);
   --scrollbar-color: var(--brand-yellow);
+  --button-hover: var(--brand-yellow);
 
   li:before {
     --color-text: var(--brand-sepia-dark);

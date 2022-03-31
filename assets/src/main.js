@@ -49,7 +49,6 @@ function initSwup() {
   });
 
   document.addEventListener("swup:contentReplaced", function (event) {
-    document.getElementById("trans-title").innerHTML = event.target.title;
     initAll();
 
     let mc = document.getElementById("open-popup");

@@ -1,194 +1,201 @@
 /*FONTS*/
 
 .screen__reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
 
 .has-medium-font-size {
-    font-size: 1.3rem;
-    line-height: 1.4;
+  font-size: 1.3rem;
+  line-height: 1.4;
 }
 
 h1,
 h2,
 h3 {
-    font-family: var(--font-headings);
-    font-weight: normal;
-    line-height: 1;
-    margin: 0;
+  font-family: var(--font-headings);
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
 
-    strong {
-        @include text-stroke;
-        color: #fff;
-        display: block;
-    }
+  strong {
+    @include text-stroke;
+    color: #fff;
+    display: block;
+  }
 }
 
 h4,
 h5,
 h6 {
-    font-family: var(--font-main);
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
+  font-family: var(--font-main);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
 }
 
 h2 {
-    font-size: var(--font-size-h2);
+  font-size: var(--font-size-h2);
 }
 h3 {
-    font-size: var(--font-size-h3);
+  font-size: var(--font-size-h3);
 }
 
 p,
 ul,
 ol,
 blockquote {
-    font-size: var(--size-text-body);
-    line-height: 1.45;
+  font-size: var(--size-text-body);
+  line-height: 1.45;
 }
 
 .icon-title {
-    display: flex;
-    gap: var(--gap);
-    align-items: flex-end;
+  display: flex;
+  gap: var(--gap);
+  align-items: flex-end;
 
-    svg {
-        width: 50px;
-        height: auto;
-    }
+  svg {
+    width: 50px;
+    height: auto;
+  }
 }
 
 .list-with-border {
-    list-style: none;
-    padding-left: 0;
-    margin-right: 0;
-    max-width: 70ch;
-    display: flex;
-    flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin-right: 0;
+  max-width: 70ch;
+  display: flex;
+  flex-wrap: wrap;
 
-    li {
-        border-left: 1px solid currentColor;
-        padding-left: var(--size-padding);
-        flex-basis: 50%;
-        flex-grow: 1;
-        min-width: 150px;
-        padding-right: 1rem;
-    }
+  li {
+    border-left: 1px solid currentColor;
+    padding-left: var(--size-padding);
+    flex-basis: 50%;
+    flex-grow: 1;
+    min-width: 150px;
+    padding-right: 1rem;
+  }
 }
 
 .underline {
-    &:after {
-        content: "";
-        display: block;
-        width: 3rem;
-        height: 1px;
-        background-color: var(--brand-primary);
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1rem;
-    }
+  &:after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 1px;
+    background-color: var(--brand-primary);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
 }
 
 .lead {
-    max-width: 70ch;
-    margin-bottom: var(--spacing);
-    line-height: 1.3;
+  max-width: 70ch;
+  margin-bottom: var(--spacing);
+  line-height: 1.3;
 }
 
 ol.large-numbers {
-    --border: 2px dashed var(--border-color);
-    counter-reset: numbers;
-    list-style: none;
+  --border: 2px dashed var(--border-color);
+  counter-reset: numbers;
+  list-style: none;
 
-    > li {
-        counter-increment: numbers;
-        max-width: 70ch;
-        position: relative;
-        margin-bottom: var(--spacing);
-        flex-basis: 33%;
-        flex-grow: 1;
-        min-width: calc(var(--flex-min-width) - 100px);
-    }
+  > li {
+    counter-increment: numbers;
+    max-width: 70ch;
+    position: relative;
+    margin-bottom: var(--spacing);
+    flex-basis: 33%;
+    flex-grow: 1;
+    min-width: calc(var(--flex-min-width) - 100px);
+  }
 
-    > li::before {
-        content: counter(numbers);
-        font-family: var(--font-headings);
-        font-weight: bold;
-        font-size: var(--font-size-h3);
-        border: 2px dashed var(--border-color);
-        display: flex;
-        place-items: center;
-        justify-content: center;
-        width: 2em;
-        height: 2em;
-        border-radius: 50%;
-        background-color: #fff;
-        --color-text: #000;
-        color: var(--white);
-        @include text-stroke;
-        transition: all 300ms;
-    }
+  > li::before {
+    content: counter(numbers);
+    font-family: var(--font-headings);
+    font-weight: bold;
+    font-size: var(--font-size-h3);
+    border: 2px dashed var(--border-color);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #fff;
+    --color-text: #000;
+    color: var(--white);
+    @include text-stroke;
+    transition: all 300ms;
+  }
 
-    li:hover:before {
-        --color-text: var(--numbers-hover);
-        border-color: var(--numbers-hover);
-    }
+  li:hover:before {
+    --color-text: var(--numbers-hover);
+    border-color: var(--numbers-hover);
+  }
 }
 
 .large-numbers.vertical {
-    border-left: var(--border);
-    margin-left: 4em;
-    padding-left: 5em;
+  border-left: var(--border);
+  margin-left: 4em;
+  padding-left: 5em;
 
-    > li:before {
-        position: absolute;
-        left: -2.7em;
-        top: -0.5em;
-    }
+  > li:before {
+    position: absolute;
+    left: -2.7em;
+    top: -0.5em;
+  }
 }
 
 .large-numbers.inline {
+  display: flex;
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+
+  &:before {
+    border-top: var(--border);
+    content: "";
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    left: 0;
+    display: block;
+  }
+
+  li:before {
+    position: static;
+    margin-bottom: 1rem;
+    flex-direction: column;
     display: flex;
-    border-left: none;
-    margin-left: 0;
-    padding-left: 0;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
+  }
 
-    &:before {
-        border-top: var(--border);
-        content: "";
-        position: absolute;
-        top: 3rem;
-        width: 100%;
-        left: 0;
-        display: block;
+  @media screen and (min-width: $size-mobile) {
+    li {
+      padding-right: calc(2 * var(--size-padding));
     }
-
-    li:before {
-        position: static;
-        margin-bottom: 1rem;
-        flex-direction: column;
-        display: flex;
-    }
-
-    @media screen and (min-width: $size-mobile) {
-        li {
-            padding-right: calc(2 * var(--size-padding));
-        }
-    }
+  }
 }
 
 li.title {
-    list-style: none;
-    text-transform: uppercase;
+  list-style: none;
+  text-transform: uppercase;
 }

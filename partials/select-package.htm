@@ -1,30 +1,10 @@
+[categoriesList]
+==
 <div class="section container">
     <h2>wybierz pakiet <strong>dla siebie</strong></h2>
     <p class='lead'>Kompleksowe leczenie zespołów bólowych kręgosłupa to terapia manualna w koncepcji dr Paluch, zawiera  od 12-20 zabiegów manualnych, w zależnosci od stanu zdrowia. Terapia uzupełniona jest odpowiednimi zabiegami z nowoczesnej medycyny fizykalnej. Czas terapii od 6 dni do 10.</p>
+    
     <div class="grid-third">
-        <div class="image-box">
-            <article>
-                <figure><a href="{{'klasyczna'|page}}"><img src="{{"assets/images/tradycyjna.jpg"|theme}}" alt=""></a></figure>
-                <h3 class='underline'><a href="{{'klasyczna'|page}}"><strong>Klasyczna terapia</strong>Dr Paluch</a></h3>
-                <p>Klasyczna terapia leczenia manualnego zespołów bólowych kręgosłupa, wywodząca się z wielopokoleniowej tradycji rodziny Paluch.</p>
-            </article>
-            <a href="{{'klasyczna'|page}}" class="button-alt">Szczegóły</a>
-        </div>
-        <div class="image-box">
-            <article>
-                <figure><img src="{{"assets/images/kompleksowa.jpg"|theme}}" alt=""></figure>
-                <h3 class='underline'><strong>Kompleksowa terapia</strong> dr paluch</h3>
-                <p>Pakiety stanowią rozszerzenie klasycznej terapii Paluch stosowanej od lat w gabinetach Paluch w Polsce.</p>
-            </article>
-            <a href="{{'kompleksowa'|page}}" class="button-alt">Szczegóły</a>
-        </div>
-        <div class="image-box">
-            <article>
-                <figure><img src="{{"assets/images/aktywni.jpg"|theme}}" alt=""></figure>
-                <h3 class='underline'><strong>Aktywni</strong>sport&amp;fit</h3>
-                <p>Pakiety przeznaczone dla osób aktywnych z dolegliwościami bólowymi. Idealny do rekonwalescencji po treningach siłowych i fitness.</p>
-            </article>
-            <a href="{{'sport-fit'|page}}" class="button-alt">Szczegóły</a>
-        </div>
+        {% component 'categoriesList' %}
     </div>
 </div>
