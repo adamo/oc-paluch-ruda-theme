@@ -5,17 +5,17 @@ gsap.registerPlugin(ScrollTrigger, Expo, Power2);
 
 export function initAnmiations() {
   gsap.fromTo(".hero .large", { opacity: 0 }, { opacity: 1 });
-  gsap.fromTo(
-    ".black-circle.box",
-    { x: "200%" },
-    {
-      x: 0,
-      scrollTrigger: {
-        trigger: this,
-      },
-    }
-  );
-  gsap.fromTo(".black-circle.box > *", { opacity: 0 }, { opacity: 1 });
+
+  ScrollTrigger.batch(".fade-in", {
+    onEnter: (elements) => {
+      gsap.from(elements, {
+        autoAlpha: 0,
+        y: 60,
+        stagger: 0.15,
+      });
+    },
+    once: true,
+  });
 
   ScrollTrigger.create({
     animation: gsap.fromTo(
