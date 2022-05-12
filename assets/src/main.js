@@ -50,16 +50,6 @@ function initSwup() {
 
   document.addEventListener("swup:contentReplaced", function (event) {
     initAll();
-
-    let mc = document.getElementById("open-popup");
-
-    if (mc) {
-      mc.addEventListener("click", showPopup);
-    }
-  });
-
-  document.addEventListener("swup:transitionEnd", function (event) {
-    document.getElementById("trans-title").innerHTML = "";
   });
 }
 

@@ -11,10 +11,10 @@ export function initAnmiations() {
       gsap.from(elements, {
         autoAlpha: 0,
         y: 60,
-        stagger: 0.15,
+        stagger: 0.25,
       });
     },
-    once: true,
+    // once: true,
   });
 
   ScrollTrigger.create({

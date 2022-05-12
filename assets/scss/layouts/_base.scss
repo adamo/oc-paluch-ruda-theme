@@ -13,15 +13,9 @@
 
 .grid-third {
   grid-gap: var(--grid-gap);
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(
-      calc(
-        var(--size-container) / 3 - var(--grid-gap) - var(--size-padding) * 4
-      ),
-      1fr
-    )
-  );
+  @media screen and (min-width: $size-mobile) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .flex-third {

@@ -1,44 +1,44 @@
 svg.logo {
-    max-width: 250px;
+  max-width: 250px;
 
-    path {
-        fill: inherit;
-    }
+  path {
+    fill: inherit;
+  }
 
-    use {
-        fill: var(--brand-blue);
-    }
+  use {
+    fill: var(--brand-blue);
+  }
 }
 
 img,
 video,
 iframe,
 svg {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .rounded-image {
+  position: relative;
+
+  img {
     position: relative;
+    right: -1px;
+  }
 
-    img {
-        position: relative;
-        right: -1px;
-    }
+  .circle-decorator {
+    position: absolute;
+    width: min(250px, 30vw);
+    z-index: -1;
+  }
 
-    .circle-decorator {
-        position: absolute;
-        max-width: 150px;
-        z-index: -1;
-    }
-
-    .circle-before {
-        right: 5%;
-        transform: translateY(-50%);
-    }
-    .circle-after {
-        left: 40px;
-        transform: translateY(30%) rotate(90deg);
-        bottom: 0;
-        max-width: 200px;
-    }
+  .circle-before {
+    right: 5%;
+    transform: translateY(-50%);
+  }
+  .circle-after {
+    left: 40px;
+    transform: translateY(30%) rotate(90deg);
+    bottom: 0;
+    max-width: 200px;
+  }
 }

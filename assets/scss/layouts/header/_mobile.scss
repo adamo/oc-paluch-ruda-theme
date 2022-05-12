@@ -10,6 +10,10 @@
   overflow: hidden;
   width: 100vw;
 
+  --transition-toggle: 300ms;
+  --transition-menu: 200ms;
+  --transition-menu-background: 250ms;
+
   .brand-bar {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
@@ -26,7 +30,6 @@
     a {
       display: block;
       text-align: center;
-      font-size: 2em;
     }
   }
 
@@ -42,13 +45,33 @@
   }
 
   .toggable {
-    display: none;
+    pointer-events: none;
     position: fixed;
     top: 0;
     bottom: 70px;
     left: 0;
     right: 0;
     background: #fff;
+    opacity: 0;
+    transition: opacity var(--transition-toggle);
+    transition-delay: calc(2 * var(--transition-toggle));
+  }
+
+  .main-navigation {
+    height: 100%;
+    display: flex;
+    place-items: flex-end;
+    justify-content: center;
+    background: url(../images/logo.svg) no-repeat 50% 20px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    opacity: 0;
+    transition: opacity var(--transition-menu-background);
+
+    .toggled & {
+      opacity: 1;
+      transition-delay: calc(2 * var(--transition-toggle));
+    }
   }
 
   .main-navigation ul {
@@ -56,10 +79,27 @@
     display: flex;
     justify-items: flex-end;
     flex-direction: column;
-    height: 100%;
+    transition: all var(--transition-menu);
+    transform: translateY(60px);
+    opacity: 0;
+
+    a {
+      display: block;
+      font-size: 1.7em;
+      text-align: center;
+    }
   }
 
   &.toggled .toggable {
     display: block;
+    opacity: 1;
+    pointer-events: all;
+    transition-delay: 0s;
+
+    .main-navigation ul {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: calc(3 * var(--transition-toggle));
+    }
   }
 }
